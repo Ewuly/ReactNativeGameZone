@@ -21,7 +21,7 @@ export default function Index() {
       await SplashScreen.hideAsync();
     };
 
-    loadResources();
+    loadResources(); 
   }, []);
 
   return <Home />;
