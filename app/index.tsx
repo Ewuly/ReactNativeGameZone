@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as Font from 'expo-font';
-import Home from "./screens/home";
 import * as SplashScreen from 'expo-splash-screen';
+import Navigator from "./routes/homeStack";
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -24,5 +24,5 @@ export default function Index() {
     loadResources(); 
   }, []);
 
-  return <Home />;
+  return <Navigator/>
 }
