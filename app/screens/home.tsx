@@ -8,6 +8,8 @@ export default function Home({ navigation }: { navigation: any }) {
         { title: 'Pizza', rating: 5, body: 'lorem ipsum', key: '1' },
         { title: 'Burger', rating: 4, body: 'lorem ipsum', key: '2' },
         { title: 'Steak', rating: 3, body: 'lorem ipsum', key: '3' },
+        { title: 'Coke', rating: 1, body: 'lorem ipsum', key: '4' },
+        { title: 'Fries', rating: 5, body: 'lorem ipsum', key: '5' },
     ]);
 
     return (
