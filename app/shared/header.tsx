@@ -6,10 +6,10 @@ import { DrawerNavigationProp } from '@react-navigation/drawer';
 
 type HeaderProps = {
     navigation: DrawerNavigationProp<any, any>;
+    title: string;
   };
 
-export default function Header({ navigation }: HeaderProps) {
-
+export default function Header({ navigation, title }: HeaderProps) {
 
     const openMenu = () => {
         navigation.openDrawer();
@@ -18,7 +18,7 @@ export default function Header({ navigation }: HeaderProps) {
         <View style={styles.header}>
             <MaterialIcons name="menu" size={28} onPress={openMenu} style={styles.icon}/>
             <View>
-                <Text style={styles.headerText}>GameZone</Text>
+                <Text style={styles.headerText}>{ title }</Text>
             </View>
         </View>
     );

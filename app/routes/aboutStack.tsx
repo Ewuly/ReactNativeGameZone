@@ -22,7 +22,7 @@ export default function AboutStack() {
           name="About" 
           component={About} 
           options={({ navigation }) => ({
-            headerTitle: () => <Header navigation={navigation} />
+            headerTitle: () => <Header navigation={navigation} title="About" />
           })}
         />
       </Screens.Navigator>
