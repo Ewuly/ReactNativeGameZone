@@ -11,9 +11,9 @@ export default function HomeStack() {
       <Screens.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#f4511e',
+            backgroundColor: '#eee',
           },
-          headerTintColor: '#fff',
+          headerTintColor: '#444',
           headerTitleStyle: {
             fontWeight: 'bold',
           },
