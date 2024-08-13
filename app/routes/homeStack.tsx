@@ -6,9 +6,31 @@ const Stack = createNativeStackNavigator();
 
 export default function Navigator() {
     return (
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="ReviewDetails" component={ReviewDetails} />
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      >
+        <Stack.Screen 
+          name="Home" 
+          component={Home} 
+          options={{
+            title: 'Food Reviews',
+          }}
+        />
+        <Stack.Screen 
+          name="ReviewDetails" 
+          component={ReviewDetails} 
+          options={{
+            title: 'Review Details',
+          }}
+        />
       </Stack.Navigator>
     );
   }

@@ -8,7 +8,9 @@ export const globalStyles = StyleSheet.create({
     titleText: {
         fontFamily: 'outfit-bold',
         fontSize: 18,
-        color: '#333'
+        color: '#333',
+        padding: 10,
+        textDecorationLine: 'underline',
     },
     paragraph: {
         marginVertical: 8,
